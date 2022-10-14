@@ -4,7 +4,7 @@ class Solution:
         res = list()
         for i in range(len(names)):
             dic[heights[i]] = names[i]
-        new_dic = sorted(dic.items(), key = lambda item: item[0], reverse = True)
-        for i in new_dic:
+        dic = sorted(dic.items(), key = lambda item: item[0], reverse = True)
+        for i in dic:
             res.append(i[1])
         return res
